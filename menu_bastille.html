@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+   <head>
+       <!--GENERAL INFO-->
+       <title>Ohmyfood, a gourmet menu restaurant tool</title>
+       <meta charset="utf-8" />
+       <meta name="description" content="Ohmyfood is a new company that offers a mobile friendly site that lists the menus of gourmet restaurants"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0." />
+       <link href="public/css/style.css" type="text/css" rel="stylesheet" />
+       <link href="images/logo/ohmyfood.png" type="image/x-icon" rel="shortcut icon"/>
+       <script src="https://kit.fontawesome.com/ae6797726b.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+    <header class="header">
+      <a class="header__back" href="index.html"><i class="fas fa-arrow-left"></i></a>
+      <a class="header__logo" href="#"><img src="public/images/logo/ohmyfood@2x.svg" alt="Logo"></a>
+  </header>
+
+  <main section>
+      <div class="setting">
+          <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+      </div>
+      <div class="menu">
+          <div class="menu__location">
+              <h2>Bastille</h2>
+              <button class="ResHeart" title="Add to favorites" onclick="addtoFavourites()">
+                <div class="ResHeart__bottom"><i class="far fa-heart"></i></div>
+                <div class="ResHeart__top"><i class="fas fa-heart"></i></div>
+             </button>
+          </div>
+
+    <form class="menu__sum" action="#" method="post" target="_blank">
+              <div class="starters">
+                  <div class="starters__heading">
+                      <p>Entrees</p>
+                      <div class="starters__heading--underline"></div>
+                  </div>
+                  <div class=" food starters__food starters__food--1">
+                      <label for="entree-1" ></label>
+                      <input class="food__choice" type="checkbox" id="entree-1" name="entree" value="entree-1"/>
+                      <div class="food__name">
+                          <h3>Citrus Squid Carpacio</h3>
+                          <p>with orange zest</p>
+                      </div>
+                      <div class="food__price">25€</div>
+                      <div class="food__icon">
+                          <i class="fas fa-check-circle"></i>
+                      </div>
+                  </div>
+                  <div class=" food starters__food starters__food--2">
+                      <label for="entree-2" ></label>
+                      <input class="food__choice" type="checkbox" id="entree-2" name="entree" value="entree-2"/>
+                      <div class="food__name">
+                          <h3>Grandmother's Vegetable Soup</h3>
+                          <p>carrots, parsnips, Jerusalem artichoke</p>
+                      </div>
+                      <div class="food__price">35€</div>
+                      <div class="food__icon">
+                          <i class="fas fa-check-circle"></i>
+                      </div>
+                  </div>
+                  <div class=" food starters__food starters__food--3">
+                      <label for="entree-3" ></label>
+                      <input class="food__choice" type="checkbox" id="entree-3" name="entree" value="entree-3"/>
+                      <div class="food__name">
+                          <h3>Onion Soup</h3>
+                          <p>revisited</p>
+                      </div>
+                      <div class="food__price">20€</div>
+                      <div class="food__icon">
+                          <i class="fas fa-check-circle"></i>
+                      </div>
+                  </div>
+              </div>
+
+                   <div class="mdish">
+                      <div class="starters">
+                          <div class="starters__heading">
+                              <p>MAIN DISH</p>
+                              <div class="starters__heading--underline"></div>
+                          </div>
+                          <div class=" food starters__food starters__food--1">
+                              <label for="mdish-1" ></label>
+                              <input class="food__choice" type="checkbox" id="mdish-1" name="mdish" value="mdish-1"/>
+                              <div class="food__name">
+                                  <h3>Scallops</h3>
+                                  <p>with mashed parsnip</p>
+                              </div>
+                              <div class="food__price">40€</div>
+                              <div class="food__icon">
+                                  <i class="fas fa-check-circle"></i>
+                              </div>
+                          </div>
+                          <div class=" food starters__food starters__food--2">
+                              <label for="mdish-2" ></label>
+                              <input class="food__choice" type="checkbox" id="mdish-2" name="mdish" value="mdish-2"/>
+                              <div class="food__name">
+                                  <h3>Magret de Canard</h3>
+                                  <p>with mashed potatoes</p>
+                              </div>
+                              <div class="food__price">35€</div>
+                              <div class="food__icon">
+                                  <i class="fas fa-check-circle"></i>
+                              </div>
+                          </div>
+                          <div class=" food starters__food starters__food--3">
+                              <label for="mdish-3" ></label>
+                              <input class="food__choice" type="checkbox" id="mdish-3" name="mdish" value="mdish-3"/>
+                              <div class="food__name">
+                                  <h3>Game Hen</h3>
+                                  <p>with vegetable gnocchis</p>
+                              </div>
+                              <div class="food__price">44€</div>
+                              <div class="food__icon">
+                                  <i class="fas fa-check-circle"></i>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                        <div class="desserts">              
+                            <div class="starters">
+                                <div class="starters__heading">
+                                    <p>Desserts</p>
+                                    <div class="starters__heading--underline"></div>
+                                </div>
+                                <div class=" food starters__food starters__food--1">
+                                    <label for="dessert-1" ></label>
+                                    <input class="food__choice" type="checkbox" id="dessert-1" name="dessert" value="dessert-1"/>
+                                    <div class="food__name">
+                                        <h3>Floral Ice Cream</h3>
+                                        <p>with hazelnut butter</p>
+                                    </div>
+                                    <div class="food__price">18€</div>
+                                    <div class="food__icon">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                </div>
+                                <div class=" food starters__food starters__food--2">
+                                    <label for="dessert-2" ></label>
+                                    <input class="food__choice" type="checkbox" id="dessert-2" name="dessert" value="dessert-2"/>
+                                    <div class="food__name">
+                                        <h3>Chocolate Lava Cake</h3>
+                                        <p>revisited</p>
+                                    </div>
+                                    <div class="food__price">22€</div>
+                                    <div class="food__icon">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                </div>
+                                <div class=" food starters__food starters__food--3">
+                                    <label for="dessert-3" ></label>
+                                    <input class="food__choice" type="checkbox" id="dessert-3" name="dessert" value="dessert-3"/>
+                                    <div class="food__name">
+                                        <h3>Napolean</h3>
+                                        <p>with blueberries and marzipan</p>
+                                    </div>
+                                    <div class="food__price">23€</div>
+                                    <div class="food__icon">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+           <nav class="order__button">
+             <button class="btn order" type="submit"><span>Order</span></button>
+           </nav>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo"><a href="#"><img src="public/images/logo/ohmyfood@2x.svg" alt="Logo"></a></div>
+    <nav class="footer__list">
+        <ul>
+          <li class="li title"><i class="fa-solid fa-utensils"></i><a href="#">Suggest a restaurant</a></li>
+          <li class="li title"><i class="fa-solid fa-handshake-angle"></i><a href="#">Become a partner</a></li>
+          <li class="li title"><a href="#">Legal</a></li>
+          <li class="li title"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+    </ul>
+    </nav>
+  </footer>
+</body>
+</html>

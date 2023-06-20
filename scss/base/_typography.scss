@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(0.5rem, 0.5rem + 2vw, 1em);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.intro__heading,
+.hiw__heading,
+#main__heading {
+    font-size: 1.5rem;
+}
+
+.intro__byline .card-res__byline .resto-card__heading {
+    font-size: 1.1rem;
+}
+
+.menu {
+    .menu__location {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
